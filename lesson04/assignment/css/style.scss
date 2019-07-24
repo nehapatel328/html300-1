@@ -1,0 +1,96 @@
+/*Variables for font and color*/
+$font-stack: 'Montserrat', sans-serif;
+$primary-color: #3ca721;
+
+/*Variables for link and button*/
+$a-tags: '.button:link,.button:visited';
+$a-tags-hover: '.button:hover,.button:active';
+
+
+/**Link color transitions. Source code: https://css-tricks.com/having-fun-with-link-hover-effects/**/
+
+:root {
+  --mainColor: #ff9800;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-family: $font-stack;
+  font-size: 2em;
+  height: 100vh;
+  justify-content: center;
+}
+
+@mixin links ($a-tags,$a-tags-hover) {
+  & {
+    $a-tags {
+      background:
+         linear-gradient(
+           to bottom, var(--mainColor) 0%,
+           var(--mainColor) 100%
+         );
+        background-position: 0 100%;
+        background-repeat: repeat-x;
+        background-size: 4px 4px;
+        background-color: $primary-color; /*Green for button background*/
+      color: #FFFFFF; /*White for link text*/
+      padding: 12px 28px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-family: $font-stack;
+      font-size: 1em;
+      transition: background-size .5s;
+    }
+
+    &:hover, &:active {
+      $a-tags-hover {
+        /*Button color change on hover. Source code: /**Link color transitions. Source code: https://css-tricks.com/having-fun-with-link-hover-effects/**/
+        background-color: $primary-color; /*Green for button background*/
+        background-size: 4px 50px;
+        /*Change button size on hover. Source code: https://perishablepress.com/tools/css/transform/*/
+        -webkit-transform: rotate(360deg) scale(0.8);
+        -moz-transform:    rotate(360deg) scale(0.8);
+        -o-transform:      rotate(360deg) scale(0.8);
+        -ms-transform:     rotate(360deg) scale(0.8);
+    }
+  }
+}
+
+/*
+***OTHER WAY TO NEST***
+  p {
+    .button {
+      .button:link,.button:visited {
+        background:
+           linear-gradient(
+             to bottom, var(--mainColor) 0%,
+             var(--mainColor) 100%
+           );
+          background-position: 0 100%;
+          background-repeat: repeat-x;
+          background-size: 4px 4px;
+          background-color: $primary-color;
+        color: #FFFFFF;
+        padding: 12px 28px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-family: $font-stack;
+        font-size: 1em;
+        transition: background-size .5s;
+      }
+
+      .button:hover,.button:active {
+        background-color: $primary-color;
+        background-size: 4px 50px;
+        -webkit-transform: rotate(360deg) scale(0.8);
+        -moz-transform:    rotate(360deg) scale(0.8);
+        -o-transform:      rotate(360deg) scale(0.8);
+        -ms-transform:     rotate(360deg) scale(0.8);
+      }
+    }
+  }
+}
+*/

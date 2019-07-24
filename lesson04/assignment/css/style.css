@@ -1,0 +1,45 @@
+/**Link color transitions. Source code: https://css-tricks.com/having-fun-with-link-hover-effects/**/
+
+:root {
+  --mainColor: #ff9800;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  height: 100vh;
+  justify-content: center;
+}
+
+.button:link,.button:visited {
+  background:
+     linear-gradient(
+       to bottom, var(--mainColor) 0%,
+       var(--mainColor) 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+    background-color: #3ca721; /*Green for button background*/
+  color: #FFFFFF; /*White for link text*/
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family:  "Hind Siliguri", sans-serif;
+  font-size: 1em;
+  transition: background-size .5s;
+}
+
+.button:hover,.button:active {
+  /*Button color change on hover. Source code: /**Link color transitions. Source code: https://css-tricks.com/having-fun-with-link-hover-effects/**/
+  background-color: #3ca721; /*Green for button background*/
+  background-size: 4px 50px;
+  /*Change button size on hover. Source code: https://perishablepress.com/tools/css/transform/*/
+  -webkit-transform: rotate(360deg) scale(0.8);
+  -moz-transform:    rotate(360deg) scale(0.8);
+  -o-transform:      rotate(360deg) scale(0.8);
+  -ms-transform:     rotate(360deg) scale(0.8);
+}
