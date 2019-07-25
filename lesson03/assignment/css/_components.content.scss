@@ -13,5 +13,52 @@ html {
 }
 
 h1 {
-    color: $red;  
+    color: $red;
+}
+
+.template-hook{
+	display: flex;
+	flex-flow: row wrap;
+	height: auto;
+	.employee_cards{
+		display:flex;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0  auto;
+	}
+	h1{
+		margin: 2% 0;
+		text-align: center;
+	}
+}
+
+//Info about employee: Nesting
+article {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  .box-text {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-weight: lighter;
+  }
+}
+
+//Figure: Nesting
+figure {
+  img {
+    text-align: center;
+  }
+
+  figcaption {
+    text-align: center;
+  }
 }
