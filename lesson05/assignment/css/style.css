@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+}
+
+/*CONTENT----for the grid layout*/
+.main {
+
+}
+
+/*MAIN CONTENT*/
+.main-content{
+
+}
+
+/*HEADER*/
+.header {
+  background-color: red; 
+}
+
+/*NAVIGATION*/
+nav {
+}
+
+.ul-navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #BA4643;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.li-navigation {
+  display: inline;
+  float: left;
+}
+
+/*FOR LINKS
+.a-navigation {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+*/
+
+/*SIDEBAR*/
+aside {
+
+}
+
+
+/*NAVIGATION*/
+footer {
+
+}
