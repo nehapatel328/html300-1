@@ -2,9 +2,9 @@
   box-sizing: border-box;
 }
 
-/*CONTENT----for the grid layout*/
+/*CONTENT----for the grid layout of SIDEBAR & MAIN CONTENT & FOOTER*/
 .main {
-
+  display: grid;
 }
 
 /*MAIN CONTENT*/
@@ -14,7 +14,7 @@
 
 /*HEADER*/
 .header {
-  background-color: red; 
+  background-color: red;
 }
 
 /*NAVIGATION*/
