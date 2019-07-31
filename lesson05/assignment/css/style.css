@@ -2,19 +2,36 @@
   box-sizing: border-box;
 }
 
+h1, h2, p, li {
+  color: white;
+  font-size: 2em;
+  font-family: sans-serif;
+}
+
 /*CONTENT----for the grid layout of SIDEBAR & MAIN CONTENT & FOOTER*/
 .main {
   display: grid;
+  grid-template-columns: 4fr 9fr;
 }
 
 /*MAIN CONTENT*/
 .main-content{
-
+  height: 40em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: orange;
 }
 
 /*HEADER*/
 .header {
   background-color: red;
+  width: 100%;
+	height: 9em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /*NAVIGATION*/
@@ -26,11 +43,14 @@ nav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #BA4643;
+  background-color: green;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  align-content: center;
   flex-wrap: wrap;
+  width: 100%;
+  height: 4em;
 }
 
 .li-navigation {
@@ -50,11 +70,21 @@ nav {
 
 /*SIDEBAR*/
 aside {
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: purple;
+  height: 40em;
 }
 
 
 /*NAVIGATION*/
 footer {
-
+  width: 100%;
+  height: 9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
 }
