@@ -362,7 +362,6 @@ html {
   box-sizing: inherit; }
 
 .main {
-  padding: 2rem;
   display: grid;
   grid-template-columns: 4fr 9fr; }
   .main .main-content {
@@ -419,3 +418,49 @@ nav .ul-navigation {
 nav .li-navigation {
   display: inline;
   float: left; }
+
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 900px) {
+  .main {
+    display: grid;
+    grid-template-columns: 4fr 9fr;
+    }
+
+  .li-navigation {
+    display:flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    display: grid;
+    grid-template-columns: 4fr 9fr;
+    }
+  .li-navigation {
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media screen and (max-width:460px) {
+  .main {
+    grid-template-rows: 4fr 9fr;
+    }
+
+  .ul-navigation {
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .li-navigation {
+    flex-basis: 50%;
+
+  }
+
+}
+  @media print {
+    .main {
+      color: black;
+      }
+  }
