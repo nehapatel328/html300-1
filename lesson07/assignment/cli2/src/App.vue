@@ -4,7 +4,6 @@
     <router-link to="/">Home</router-link>
     <router-link to="/grid.vue">Grid</router-link>
     <router-link to="/image.vue">Images</router-link>
-    <router-link to="/lp.vue">Landing Page</router-link>
     <router-link to="/accordion.vue">Accordion</router-link>
   </div>
 </template>

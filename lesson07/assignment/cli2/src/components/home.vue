@@ -12,9 +12,11 @@
 
 <div>
 <b-jumbotron>
-  <template slot="header">BootstrapVue</template>
+  <template slot="header">Neha</template>
 
   <template slot="lead">
+  <h1 v-if="awesome">Hope you're doing well!</h1>
+  <h1 v-else>Sorry to see you go!</h1>
     This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
     featured content or information.
   </template>
