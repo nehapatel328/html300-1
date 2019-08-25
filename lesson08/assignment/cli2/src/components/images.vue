@@ -1,6 +1,9 @@
 <template>
   <div class="image">
-    <img v-for="link in album" v-bind:src='images[0 | 1 | 2]' class="img-fluid img-thumbnail">
+    <Lessonimages :headshot="headshot"/>
+    <header>
+      <h1></h1>
+    </header>
   </div>
 </template>
 
@@ -19,7 +22,7 @@ import myHeader from '../../components/Lessonheader.vue';
             }
 
         }
-        images: [
+        image: [
           {
             id:"0",
             url:"../assets/headshot1.jpeg",
@@ -64,4 +67,7 @@ import myHeader from '../../components/Lessonheader.vue';
 </script>
 
 <style>
+.image {
+
+}
 </style>
