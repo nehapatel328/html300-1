@@ -1,10 +1,12 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <router-link to="/">Home</router-link>
-    <router-link to="/grid">Grid</router-link>
-    <router-link to="/image">Images</router-link>
-    <router-link to="/accordion">Accordion</router-link>
+    <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/grid">Grid</router-link>
+      <router-link to="/image">Images</router-link>
+      <router-link to="/accordion">Accordion</router-link>
+    </nav>
     <router-view></router-view>
   </div>
 </template>
