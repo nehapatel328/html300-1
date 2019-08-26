@@ -1,0 +1,9 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+$red:#ff0000;
+
+.router-link-exact-active {
+  border-bottom: 1px solid $red;
+  display: inline-block;
+}
